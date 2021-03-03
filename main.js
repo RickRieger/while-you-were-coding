@@ -78,14 +78,15 @@ console.log('##### Challenge 6 #####');
 let string6 = 'Whoa, I am the best!';
 
 //Difficult to complete on time :)
-// for(let i = 0; i <=string6.length; i++){
-//   if(string6[i] !== ' ' && string6[i].includes('a')
-//   }
-//   else if (string6[i] !== ' ' ||  string6[i] === 'a' || string6[i] === 'm'){
-//  const capLetter = string6[i].toUpperCase();
-//  console.log(capLetter);
-//   }
-//   }
+for(let i = 0; i <=string6.length; i++){
+  if(i === 8 || i === 9){
+    const capLetter = string6[i].toUpperCase();
+    console.log(capLetter)
+  }
+  else{
+    console.log(string6[i])
+  }
+}
 
 
 
