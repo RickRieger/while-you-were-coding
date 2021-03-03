@@ -114,7 +114,15 @@ const names = 'Alex|Mesuara|Brian|Chanel|Matt|Jeremy B.|Jose|Andy|Dustin|Joshua|
 // You'll know you're at a new person's name when you hit the pipe character.
 
 // Don't print the pipes!
-for 
+console.log('Here today is:')
+for(let i = 0; i <=names.length -1; i++){
+  if(names[i] === '|'){
+    console.log('Here today is:')
+  }
+  else{
+    console.log(names[i])
+  }
+}
 
 
 
