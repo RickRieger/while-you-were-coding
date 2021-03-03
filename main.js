@@ -14,6 +14,10 @@ console.log('##### Challenge 1 #####');
 // Console out the numbers from 1-20, but only if they're divisible by 3.
 // Hint: Use `if` and a modulus operation.
 
+// for (let i = 1; i <= 20; i++){
+//   if(i % 3 === 0)
+//   console.log(i);
+// }
 
 
 console.log('##### Challenge 2 #####');
@@ -21,7 +25,9 @@ console.log('##### Challenge 2 #####');
 //
 // Console out the numbers from 1-20. BACKWARDS.
 
-
+// for (let i = 20; i >= 1; i--){
+//   console.log(i);
+// }
 
 console.log('##### Challenge 3 #####');
 // 3.
@@ -29,8 +35,12 @@ console.log('##### Challenge 3 #####');
 // For the string 'Boy howdy am I good at this!', console out the letters
 // individually.
 let string3 = 'Boy howdy am I good at this!';
+// for(let i = 0; i <=string3.length; i++){
+// //   if(string3[i] !== ' ')
+// //   console.log(string3[i]);
+// // }
 
-
+// 
 
 console.log('##### Challenge 4 #####');
 // 4.
@@ -39,6 +49,10 @@ console.log('##### Challenge 4 #####');
 // character, print out every third character.
 let string4 = 'And getting better every day.';
 
+// for(let i = 1; i <=string4.length; i++){
+//   if(i === 1 || i%3 === 0)
+//   console.log(string4[i]);
+// }
 
 
 console.log('##### Challenge 5 #####');
@@ -48,6 +62,12 @@ console.log('##### Challenge 5 #####');
 // UPPERCASED.
 let string5 = 'Am I the best?';
 
+// for(let i = 0; i <=string5.length; i++){
+//   if(string5[i] !== ' '){
+//  const capLetter = string5[i].toUpperCase();
+//  console.log(capLetter);
+//   }
+// }
 
 
 console.log('##### Challenge 6 #####');
@@ -56,6 +76,15 @@ console.log('##### Challenge 6 #####');
 // For the string 'Whoa, I am the best!', console out the letters individually,
 // but also capitalize the letters in the third word.
 let string6 = 'Whoa, I am the best!';
+
+// for(let i = 0; i <=string6.length; i++){
+//   if(string6[i] !== ' ' && string6[i].includes('a')
+//   }
+//   else if (string6[i] !== ' ' ||  string6[i] === 'a' || string6[i] === 'm'){
+//  const capLetter = string6[i].toUpperCase();
+//  console.log(capLetter);
+//   }
+//   }
 
 
 
@@ -67,7 +96,11 @@ console.log('##### Challenge 7 #####');
 // `.`, followed by `s`, followed by `d`, and so on.
 let string7 = 'I am become death, destroyer of worlds.';
 
-
+// for (let i = string7.length; i >= 0; i--){
+//   if(string7[i] !== ' '){
+//     console.log(string7[i]);
+// }
+// }
 
 console.log('##### Challenge 8 #####');
 // 8.
@@ -81,7 +114,7 @@ const names = 'Alex|Mesuara|Brian|Chanel|Matt|Jeremy B.|Jose|Andy|Dustin|Joshua|
 // You'll know you're at a new person's name when you hit the pipe character.
 
 // Don't print the pipes!
-
+for 
 
 
 
