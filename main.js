@@ -77,14 +77,15 @@ console.log('##### Challenge 6 #####');
 // but also capitalize the letters in the third word.
 let string6 = 'Whoa, I am the best!';
 
-//Difficult to complete on time :)
-for(let i = 0; i <=string6.length; i++){
-  if(i === 8 || i === 9){
-    const capLetter = string6[i].toUpperCase();
-    console.log(capLetter)
-  }
-  else{
-    console.log(string6[i])
+// Count words as we go: every space means the next word has started.
+let wordNumber = 1;
+for(let i = 0; i < string6.length; i++){
+  if(string6[i] === ' '){
+    wordNumber++;
+  } else if(wordNumber === 3){
+    console.log(string6[i].toUpperCase());
+  } else {
+    console.log(string6[i]);
   }
 }
 
