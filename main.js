@@ -49,8 +49,8 @@ console.log('##### Challenge 4 #####');
 // character, print out every third character.
 let string4 = 'And getting better every day.';
 
-for(let i = 1; i <=string4.length; i++){
-  if(i === 1 || i%3 === 0)
+// start at index 1 (the second character) and jump 3 each time: 1, 4, 7, 10...
+for(let i = 1; i < string4.length; i += 3){
   console.log(string4[i]);
 }
 
