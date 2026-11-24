@@ -8,15 +8,22 @@
 
 // ##### Challenges #####
 
+// Every challenge uses a while loop: set the counter, check it, change it.
+// The same counter `i` is reused and reset at the start of each challenge.
+let i;
+
 console.log('##### Challenge 1 #####');
 // 1.
 //
 // Console out the numbers from 1-20, but only if they're divisible by 3.
 // Hint: Use `if` and a modulus operation.
 
-for (let i = 1; i <= 20; i++){
-  if(i % 3 === 0)
-  console.log(i);
+i = 1;
+while (i <= 20) {
+  if (i % 3 === 0) {
+    console.log(i);
+  }
+  i++;
 }
 
 
@@ -25,8 +32,10 @@ console.log('##### Challenge 2 #####');
 //
 // Console out the numbers from 1-20. BACKWARDS.
 
-for (let i = 20; i >= 1; i--){
+i = 20;
+while (i >= 1) {
   console.log(i);
+  i--;
 }
 
 console.log('##### Challenge 3 #####');
@@ -35,9 +44,14 @@ console.log('##### Challenge 3 #####');
 // For the string 'Boy howdy am I good at this!', console out the letters
 // individually.
 let string3 = 'Boy howdy am I good at this!';
-for(let i = 0; i <=string3.length -1; i++){
-  if(string3[i] !== ' ')
-  console.log(string3[i]);
+
+// (spaces are skipped here and in the other letter challenges)
+i = 0;
+while (i < string3.length) {
+  if (string3[i] !== ' ') {
+    console.log(string3[i]);
+  }
+  i++;
 }
 
 
@@ -49,9 +63,11 @@ console.log('##### Challenge 4 #####');
 // character, print out every third character.
 let string4 = 'And getting better every day.';
 
-for(let i = 1; i <=string4.length; i++){
-  if(i === 1 || i%3 === 0)
+// start at index 1 (the second character) and jump 3 each time: 1, 4, 7, 10...
+i = 1;
+while (i < string4.length) {
   console.log(string4[i]);
+  i += 3;
 }
 
 
@@ -62,11 +78,12 @@ console.log('##### Challenge 5 #####');
 // UPPERCASED.
 let string5 = 'Am I the best?';
 
-for(let i = 0; i <=string5.length -1; i++){
-  if(string5[i] !== ' '){
- const capLetter = string5[i].toUpperCase();
- console.log(capLetter);
+i = 0;
+while (i < string5.length) {
+  if (string5[i] !== ' ') {
+    console.log(string5[i].toUpperCase());
   }
+  i++;
 }
 
 
@@ -77,15 +94,18 @@ console.log('##### Challenge 6 #####');
 // but also capitalize the letters in the third word.
 let string6 = 'Whoa, I am the best!';
 
-//Difficult to complete on time :)
-for(let i = 0; i <=string6.length; i++){
-  if(i === 8 || i === 9){
-    const capLetter = string6[i].toUpperCase();
-    console.log(capLetter)
+// Count words as we go: every space means the next word has started.
+let wordNumber = 1;
+i = 0;
+while (i < string6.length) {
+  if (string6[i] === ' ') {
+    wordNumber++;
+  } else if (wordNumber === 3) {
+    console.log(string6[i].toUpperCase());
+  } else {
+    console.log(string6[i]);
   }
-  else{
-    console.log(string6[i])
-  }
+  i++;
 }
 
 
@@ -98,10 +118,13 @@ console.log('##### Challenge 7 #####');
 // `.`, followed by `s`, followed by `d`, and so on.
 let string7 = 'I am become death, destroyer of worlds.';
 
-for (let i = string7.length -1; i >= 0; i--){
-  if(string7[i] !== ' '){
+// start at the last index (length - 1) and count down to 0
+i = string7.length - 1;
+while (i >= 0) {
+  if (string7[i] !== ' ') {
     console.log(string7[i]);
-}
+  }
+  i--;
 }
 
 console.log('##### Challenge 8 #####');
@@ -117,15 +140,14 @@ const names = 'Alex|Mesuara|Brian|Chanel|Matt|Jeremy B.|Jose|Andy|Dustin|Joshua|
 
 // Don't print the pipes!
 
-console.log('Here today is:')
-for(let i = 0; i <=names.length -1; i++){
-  if(names[i] === '|'){
-    console.log('Here today is:')
+// The first name has no pipe in front of it, so announce it before the loop.
+console.log('Here today is:');
+i = 0;
+while (i < names.length) {
+  if (names[i] === '|') {
+    console.log('Here today is:');
+  } else {
+    console.log(names[i]);
   }
-  else{
-    console.log(names[i])
-  }
+  i++;
 }
-
-
-

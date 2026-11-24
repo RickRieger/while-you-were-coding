@@ -1,0 +1,15 @@
+{
+  "name": "while-you-were-coding",
+  "version": "1.0.0",
+  "description": "Code Immersives JavaScript exercise: while loops over numbers and strings",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "jest --watchAll",
+    "test:ci": "jest --ci"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "29.7.0"
+  }
+}
