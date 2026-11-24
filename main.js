@@ -99,7 +99,7 @@ console.log('##### Challenge 7 #####');
 let string7 = 'I am become death, destroyer of worlds.';
 
 for (let i = string7.length -1; i >= 0; i--){
-  if(string7[i] !== ' '){
+  if(string7[i] !== ' '){
     console.log(string7[i]);
 }
 }
